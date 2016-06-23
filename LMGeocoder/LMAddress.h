@@ -76,6 +76,11 @@
 @property (nonatomic, readonly, copy, nullable) NSArray<NSString *> *lines;
 
 /*!
+ *  A raw dict
+ */
+@property (nonatomic, readonly, copy, nullable) NSDictionary<NSString *, id> *rawDict;
+
+/*!
  *  Initialize with response from server
  *
  *  @param locationData response object recieved from server

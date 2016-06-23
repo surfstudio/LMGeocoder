@@ -95,7 +95,8 @@ static NSString * const LMLinesKey                  = @"lines";
     if (locationData && [locationData isKindOfClass:[NSDictionary class]])
     {
         NSDictionary *locationDict = (NSDictionary *)locationData;
-        
+        _rawDict = locationDict;
+
         NSArray *lines = locationDict[@"address_components"];
         NSString *formattedAddress = locationDict[@"formatted_address"];
         double lat = [locationDict[@"geometry"][@"location"][@"lat"] doubleValue];
